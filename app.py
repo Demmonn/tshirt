@@ -5,7 +5,7 @@ import pickle as p
 
 app = Flask(__name__)
 
-model = p.load(open('tshirt', 'rb'))
+model = p.load(open('tshirtknn', 'rb'))
 
 @app.route('/', methods=['POST'])
 def makecalc():
